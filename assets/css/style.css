@@ -1,0 +1,524 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Header */
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+/* Logo */
+.logo {
+    color: #0B0B23;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* Navigation Menu */
+.navigation_menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation_item a {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* Hero */
+#hero {
+    height: 500px;
+    background: #090B1D;
+}
+
+/* accordian */
+#accordion {
+    padding: 100px 0;
+}
+
+/* accordion question design */
+.custom_accordion_question {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+#custom_accordion {
+    padding: 0;
+}
+
+#custom_accordion #custom_accordion_item {
+    list-style: none;
+    background: #11B98F;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#custom_accordion #custom_accordion_item .custom_accordion_question {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight:600;
+    cursor: pointer;
+}
+
+#custom_accordion  .custom_accordion_question + input[type="checkbox"] {
+    display: none;
+}
+
+/* accordion answer design */
+#custom_accordion .custom_accordion_answer {
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5;
+}
+
+#custom_accordion .custom_accordion_question + input[type="checkbox"]:checked + .custom_accordion_answer {
+    background: #EFF2F9;
+    max-height: 100%;
+    padding: 30px;
+}
+
+/* product grid container */
+
+.custom_product_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+	padding: 30px 0;
+}
+
+/* product niche heading */
+.niche_category_heading {
+    color: #2E3A5E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 0;
+    border-bottom: 0.7px solid #d8e1ea;
+}
+
+/* product box */
+.custom_product_box {
+    display: flex;
+    flex-direction: column;
+	border-radius: 30px;
+	box-shadow: 6px 6px 24px 0px rgba(28, 49, 88, 0.05);
+}
+
+/* product box content */
+.custom_product_box_content {
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: center;
+	align-self: normal;
+	gap: 10px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 0 0 30px 30px;
+}
+
+/* product heading */
+.custom_product_heading {
+    color: #2E3A5E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* product description */
+.custom_product_desc,
+#showmc {
+    color: #8392A6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+}
+
+/* product paragraph margin */
+.custom_product_box_content p {
+	margin: 0;
+}
+
+/* domain hosting design*/
+.domain_hosting_step {
+	display: block;
+	color: #2E3A5E;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+
+/* domain hosting container */
+.domain_host_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 400px;
+	min-height: 600px;
+	background: #fff;
+	padding: 30px;
+	border-radius: 0 0 30px 30px;
+	border-radius: 30px;
+}
+
+/* domain hosting heading */
+.host_domain_heading {
+	color: #2E3A5E;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 32px; /* 145.455% */
+	margin-bottom: 30px;
+}
+
+/* domain hosting paragraph */
+.domain_host_paragraph {
+	color: #8392A6;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px; /* 157.143% */
+	margin-bottom: 20px;
+}
+
+/* domain hosting btn */
+.custom_dh_btn {
+	font-size: 15px;
+	border-radius: 5px;
+	background: #11B98F;
+	color: #fff;
+	box-shadow: 0px 6px 23px 0px rgba(4, 20, 16, 0.08);
+	cursor: pointer;
+}
+
+.custom_dh_btn:hover,
+.custom_dh_btn:focus,
+.custom_dh_btn:active {
+	background: #11B98F;
+}
+
+/* domain availability btn */
+.checck_availability_btn  {
+	width: 180px;
+	margin-bottom: 30px;
+}
+
+/* get hosting btn */
+.get_hosting_btn {
+	width: 270px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	background: #11B98F;
+	box-shadow: 0px 6px 23px 0px rgba(4, 20, 16, 0.08);
+	color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 29px; /* 193.333% */
+}
+
+/* domain availability input */
+#check_domain_input {
+	width: 280px;
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #D5E1ED;
+	background: #EAF0F6;
+	padding: 0 15px;
+	margin-bottom: 20px;
+}
+
+/* domain availability input placeholder */
+
+#check_domain_input::placeholder {
+	color: #2E3A5E;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px; /* 166.667% */
+}
+
+.checck_availability_btn {
+	width: 180px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	background: #11B98F;
+	box-shadow: 0px 6px 23px 0px rgba(4, 20, 16, 0.08);
+	color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 29px; /* 193.333% */
+}
+
+#check_domain_input:focus,
+#check_domain_input:focus-visible {
+	border: 1px solid #11b98f;
+}
+
+/* find keyword heading */
+.custom_find_keyword_container {
+	padding: 30px 0;
+}
+
+.find_keyword_heading {
+	color: #2E3A5E;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px; /* 140% */
+	margin-bottom: 50px;
+}
+
+/* kwyword btn detail */
+.keyword_btn_detail {
+	color: #2E3A5E;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px; /* 150% */
+}
+
+/* dobule side btn */
+.double_side_btn {
+	display: flex;
+	gap: 100px;
+	padding: 30px 0 0 0;
+}
+
+/* custom template keyword, search btn */
+.custom_transparant_btn {
+	width: 170px;
+	height: 55px;
+	border-radius: 5px;
+	border: 1px solid #12AA84;
+	background: rgba(255, 255, 255, 0.70);
+	color: #11B98F;
+	text-align: center;
+	font-weight: 600;
+	margin-right: 15px;
+	text-align: center;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.custom_transparant_btn:hover,
+.custom_transparant_btn:focus,
+.custom_transparant_btn:active {
+	background: #11B98F;
+	border: 1px solid #12AA84;
+	color: #fff;
+	box-shadow: 0px 6px 23px 0px rgba(4, 20, 16, 0.08);
+}
+
+
+
+/* Media Queries */
+
+/* tab view (max-width 991) */
+@media (max-width:1200px) {
+
+    /* product container */
+    .custom_product_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* tab view (max-width 991) */
+@media (max-width:991px) {
+
+	#custom_accordion #custom_accordion_item .custom_accordion_question {
+		font-size: 16px;
+	}
+
+	.niche_category_heading {
+		font-size: 15px;
+	}
+
+	.custom_product_heading {
+		font-size: 16px;
+	}
+
+	.custom_product_desc, #showmc {
+		font-size: 14px;
+	}
+
+	.host_domain_heading {
+		font-size: 18px;
+	}
+
+	.domain_hosting_step {
+		font-size: 16px;
+	}
+
+	#check_domain_input::placeholder {
+		font-size: 14px;
+	}
+
+	.checck_availability_btn,
+	.get_hosting_btn,
+	.keyword_btn_detail {
+		font-size: 14px;
+	}
+
+	.find_keyword_heading {
+		font-size: 16px;
+	}
+
+	.custom_transparant_btn {
+		font-size: 15px;
+		height: 40px;
+	}
+	
+	/*transparent btn */
+	.custom_transparant_btn {
+		width: 120px;
+	}
+}
+
+@media (max-width:768px) {
+	
+	/*product container */
+	.custom_product_container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.domain_host_container {
+		max-height: 550px;
+	}
+	
+	/*double btn */
+	.double_side_btn  {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+	/* domain and host container */
+	.domain_host_container {
+		width: 100%;
+	}
+	
+	/*get host btn */
+	.get_hosting_btn {
+		width: 245px;
+	}
+}
+
+@media (max-width:600px) {
+	
+	/*accordion question */
+	#custom_accordion #custom_accordion_item .custom_accordion_question {
+		font-size: 16px;
+	}
+	
+	.custom_accordion_question svg {
+		width: 14px;
+		height: 14px;
+	}
+	
+	/*get host */
+	.get_hosting_btn {
+		width: auto;
+	}
+	
+	#custom_accordion .custom_accordion_question + input[type="checkbox"]:checked + .custom_accordion_answer {
+		padding: 30px 20px;
+	}
+	
+	/* product */
+	.niche_category_heading {
+		font-size: 16px;
+	}
+	
+	.custom_product_heading {
+		font-size: 16px;
+	}
+	
+	.custom_product_desc {
+		font-size: 14px;
+	}
+	
+	/* domain and host */
+	.host_domain_heading {
+		font-size: 18px;
+	}
+	
+	.domain_hosting_step {
+		font-size: 16px;
+	}
+	
+	.find_keyword_heading {
+		font-size: 16px;
+	}
+	
+	.keyword_btn_detail {
+		font-size: 14px;
+	}
+	
+	/* custom transparent btn */
+	.custom_transparant_btn {
+		margin-right: 10px;
+	}
+	
+	/*get  host btn */
+	.get_hosting_btn {
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 576px){
+	#header {
+		padding: 20px;
+	}
+
+	.logo {
+		font-size: 20px;
+	}
+
+	#accordion {
+		padding: 50px 20px;
+	}
+
+	#check_domain_input,
+	.checck_availability_btn {
+		width: auto;
+	}
+}
